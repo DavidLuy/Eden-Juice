@@ -7,3 +7,331 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+    font-family: Kanit, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Kanit, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu>li {
+    margin-bottom: 1em;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* navigation links */
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+#menu,
+#logo {
+    line-height: 75px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Main content */
+main {
+    flex: 1 0 auto;
+    margin-top: 47px;
+}
+
+/* juice image */
+#juice {
+    height: 600px;
+    width: 100%;
+    background: url("../images/Fruits1.jpeg") no-repeat center center/cover;
+}
+
+#cover-text {
+    background-color: rgba(6, 145, 180, 0.607);
+    font-size: 130%;
+    position: absolute;
+    bottom: 90px;
+    width: 90%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+#cover-text>h2,
+#cover-text>h3 {
+    color: #ffffff;
+}
+
+/* Restaurant section */
+#restaurant {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#restaurant h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+#benefits-diet>div,
+#benefits-mental>div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+#benefits hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
+#circle-cover-bg {
+    background: url("../images/Juice\ c.jpeg") no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Juice types section */
+#types {
+    background: url("../images/juice.webp") no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#types div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /* This will not wrap on screens of less than 400px wide.
+    Each div will expand to fill the available space on its row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* Creates a grid of juice types divs over the background image */
+    border: 2px solid white;
+}
+
+#types h3 {
+    /* Override the heading colour set in general styles */
+    color: #fafafa;
+}
+
+#types div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    text-align: center;
+
+    flex-basis: 200px;
+    flex-grow: 1;
+    border: 2px solid white;
+}
+
+#types h3 {
+    color: #fafafa;
+}
+
+/* Gallery page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
+/* Form */
+#contact {
+    background-image: url("../images/");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+
+
+#contact-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+
+#contact-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+
+.radio-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #454b1b;
+    color: #fafafa;
+}
+
+/* padding to allow for fixed footer */
+#contact {
+    margin-bottom: 50px;
+}
+
+.contact-boxes-container {
+    width: 66%;
+    margin: 0 auto;
+}
+
+.contact-box-left {
+    width: 250px;
+    margin-top: -20px;
+}
+
+.contact-box-right {
+    width: 250px;
+    text-align: right;
+    margin-top: -20px;
+}
+
+.contact-box-center {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+th,
+td {
+    border-bottom: 1px solid black;
+}
+
+ul {
+    padding: 0;
+}
+
+#reasons li {
+    margin-top: 5%;
+}
+
+a:hover {
+    text-decoration: none;
+    color: chocolate;
+}
