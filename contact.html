@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title-->
+    <title>Eden juice</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<body>
+    <h1>Eden Juice</h1>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <h1 id="logo">Eden Juice</h1>
+        </a>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="contacts.html">Contacts</a>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <section id="contact">
+        <form id="contact-form" method="POST" action="https://formdump.codeinstitute.net">
+            <h2><i class="fa-solid fa-heartbeat"></i> Let's get your order!</h2>
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name" class="text-input" required>
+            <br>
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="last_name" class="text-input" required>
+            <br>
+            <label for="email_address">Email Address</label>
+            <input type="email" name="email_address" id="email_address" class="text-input" required>
+            <br>
+            <div class="radio-buttons">
+                <div>
+                    <label for="type">Juice type</label>
+                    <input type="radio" name="juice-order" id="type value=" type" required checked>
+                </div>
+                <div>
+                    <label for="price">Price</label>
+                    <input type="radio" name="juice-order" id="price" value="price" required>
+                </div>
+                <div>
+                    <label for="both">Both</label>
+                    <input type="radio" name="juice-order" id="both" value="both" required>
+                </div>
+            </div>
+            <button type="submit" class="join-button">My Order!</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <ul id="social-networks">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)">
+                    <i class="fa-brands fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)">
+                    <i class="fa-brands fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/090a679e88.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
