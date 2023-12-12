@@ -65,7 +65,7 @@ nav {
     background-color: #ffffff;
     width: 100%;
     left: 0;
-    padding: 0 1rem;
+    padding: 0 2rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
@@ -94,18 +94,25 @@ main {
 #juice {
     height: 600px;
     width: 100%;
+    text-align: center;
     background: url("../images/Fruits1.jpeg") no-repeat center center/cover;
 }
 
 #cover-text {
-    background-color: rgba(6, 145, 180, 0.607);
+
     font-size: 130%;
+    font-family: Kanit, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 400px;
+    height: 175px;
+    padding-top: 20px;
+    padding-left: 50px;
+    background-color: rgba(14, 147, 72, 0.7);
+    right: 20px;
+    top: 500px;
     position: absolute;
-    bottom: 90px;
-    width: 90%;
-    min-height: 200px;
-    padding-top: 40px;
-    padding-left: 20px;
+
 }
 
 #cover-text>h2,
@@ -178,7 +185,9 @@ main {
     border: 2px solid white;
 }
 
-#types h3 {
+#types 
+h2,
+h3 {
     /* Override the heading colour set in general styles */
     color: #fafafa;
 }
@@ -194,18 +203,18 @@ main {
     border: 2px solid white;
 }
 
-#types h3 {
-    color: #fafafa;
-}
-
 /* Gallery page */
-#photos img {
+
+#photos>img {
     width: 100%;
-    line-height: 1em;
+
 }
 
 #photos {
+    clear: both;
     line-height: 0;
+    column-count: 3;
+    column-gap: 0;
 }
 
 /* Form */
@@ -221,7 +230,7 @@ main {
 #contact-form {
     color: #ffffff;
     background-color: rgba(60, 60, 60, 0.6);
-    padding: 30px;
+    padding: 40px;
 }
 
 
@@ -305,6 +314,12 @@ a:hover {
     color: chocolate;
 }
 
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -333,6 +348,7 @@ a:hover {
     width: 100%;
     border: none;
 }
+
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -371,72 +387,96 @@ a:hover {
 
     /* Juice */
     #cover-text {
-        width: 300px;
-        right: 50px;
+        position: absolute;
+
     }
-}
-
-/* Form */
-#contact {
-    background-position: center;
-    position: relative;
-}
-
-#contact-form {
-    max-width: 400px;
-    position: absolute;
-    left: 10%;
-    top: 150px;
-}
-
-.text-input:hover {
-    border-color: #f16c6b;
-}
-
-.join-button:hover {
-    background-color: #fafafa;
-    color: #454b1b;
-}
-
-/* Large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-    #menu a:hover {
-        border-bottom: 1px solid #3a3a3a;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-
-    /* Restaurant section */
-    #benefits {
-        display: flex;
-        flex-direction: row;
+    /* Form */
+    #contact {
+        background-position: center;
+        position: relative;
     }
 
-    #benefits>div {
-        flex: 1;
+    #contact-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150px;
     }
 
-    #benefits-image {
-        order: 0;
+    .text-input:hover {
+        border-color: #f16c6b;
     }
 
-    #benefits-mental {
-        order: 1;
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
+    /* For larger to medium screens size from 1200px wide and down */
+    @media screen and (max-width: 1200px) {
+
+        /* Restaurant section */
+        #benefits {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #benefits>div {
+            flex: 1;
+        }
+
+        #benefits-image {
+            order: 0;
+        }
+
+        #benefits-mental {
+            order: 1;
+        }
+
+        #benefits-mental>div {
+            align-self: flex-start;
+        }
+
+        #benefits-physical>div {
+            align-self: flex-end;
+        }
     }
 
-    #benefits-mental>div {
-        align-self: flex-start;
-    }
+    /* For medium screen sizes from 950px wide and down */
+    @media screen and (max-width: 950px) {
 
-    #benefits-physical>div {
-        align-self: flex-end;
-    }
-}
+        #menu {
+            clear: left;
+            float: left;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            line-height: 25px;
+        }
 
-/* For small screen sizes below 800px width */
-@media screen and (max-width: 800px) {
-    #photos {
-        column-count: 2;
+        #cover-text {
+            right: 0;
+        }
+
+
+        .left-about-heading,
+        .right-about-heading {
+            width: inherit;
+        }
+
+        .left-about-heading h2,
+        .right-about-heading h2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .left-about-heading p,
+        .right-about-heading p {
+            text-align: center;
+            padding: 0 20px;
+        }
     }
-}
+    /* For small screen sizes below 768px width */
+    @media screen and (max-width: 768px) {
+        #photos {
+            column-count: 2;
+        }
+    }
