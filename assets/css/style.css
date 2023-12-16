@@ -21,7 +21,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: Kanit, sans-serif;
+    font-family: Kanit,sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
@@ -99,7 +99,7 @@ main {
 }
 
 #cover-text {
-    
+
     font-size: 130%;
     font-family: Kanit, sans-serif;
     text-transform: uppercase;
@@ -108,11 +108,11 @@ main {
     height: 200px;
     padding-top: 40px;
     padding-left: 10px;
-    background-color: rgba(241, 109, 107, .7);
-    bottom: 30px;
-    right: 150px;
+    background-color: rgba(48, 178, 161, 0.7);
+    bottom: 130px;
+    right: 0px;
     position: absolute;
-
+    
 }
 
 #cover-text>h2,
@@ -307,7 +307,7 @@ a:hover {
 
 /* mouse over link */
 a:hover {
-    color: red;
+    color: rgb(0, 0, 255);
 }
 
 /* Footer */
@@ -341,7 +341,7 @@ a:hover {
 
 
 /* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 
     /* Header */
     nav {
@@ -376,10 +376,13 @@ a:hover {
     }
 
     /* Juice */
-    #cover-text {
+    #cover-text {               
+        bottom: 130px;
+        right: 20px;
         position: absolute;
 
     }
+
     /* Form */
     #contact {
         background-position: center;
